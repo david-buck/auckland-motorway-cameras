@@ -3,11 +3,11 @@
 import Cameras from "@/json/cameras.json";
 import { useEffect, useState } from "react";
 
-const Camera = ({ title, src }) => (
+const Camera = ({ title, src, refreshKey }) => (
   <div>
     <h3 className="mb-3">{title}</h3>
     <img
-      src={`https://www.trafficnz.info/camera/${src}`}
+      src={`https://www.trafficnz.info/camera/${src}?refreshKey=${refreshKey}`}
       alt={title}
       loading="lazy"
       className="w-full"
