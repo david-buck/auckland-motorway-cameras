@@ -1,16 +1,22 @@
 "use client";
 
-import Cameras from "@/json/cameras.json";
 import { useEffect, useState } from "react";
 
-const Camera = ({ title, description, src, refreshKey }) => (
+const Camera = ({
+  title,
+  description,
+  src,
+  offline,
+  underMaintenance,
+  refreshKey,
+}) => (
   <div>
-    <h3 className="mb-2">{title}</h3>
+    <h3 className="mb-2 leading-tight">{title}</h3>
     <img
-      src={`https://www.trafficnz.info/camera/${src}?refreshKey=${refreshKey}`}
+      src={`https://www.trafficnz.info/camera/${src}.jpg?refreshKey=${refreshKey}`}
       alt={description}
       loading="lazy"
-      className="aspect-video w-full rounded object-cover"
+      className="aspect-video w-full rounded object-cover before:content-none "
     />
   </div>
 );
@@ -27,25 +33,43 @@ export default function Home() {
     return () => clearInterval(intervalId);
   }, []);
 
-  const [filteredCameras, setFilteredCameras] = useState(Cameras);
+  const [allCameras, setAllCameras] = useState([]);
+  const [filteredCameras, setFilteredCameras] = useState([]);
 
   const handleSearchChange = (event) => {
     setSearchString(event.target.value);
-    const filtered = Cameras.map((section) => ({
-      ...section,
-      images: section.images.filter(
-        (camera) =>
-          camera.title
-            .toLowerCase()
-            .includes(event.target.value.toLowerCase().trim()) ||
-          camera.description
-            .toLowerCase()
-            .includes(event.target.value.toLowerCase().trim())
-      ),
-    })).filter((section) => section.images.length > 0);
+
+    const filtered = allCameras
+      .map((section) => ({
+        ...section,
+        images: section.images.filter(
+          (camera) =>
+            camera.Name.toLowerCase().includes(
+              event.target.value.toLowerCase().trim()
+            ) ||
+            camera.Description.toLowerCase().includes(
+              event.target.value.toLowerCase().trim()
+            )
+        ),
+      }))
+      .filter((section) => section.images.length > 0);
 
     setFilteredCameras(filtered);
   };
+
+  useEffect(() => {
+    const fetchCameras = async () => {
+      const res = await fetch("/api/cameras");
+      const data = await res.json();
+      const formattedData = Object.entries(data).map(([section, images]) => ({
+        section,
+        images,
+      }));
+      setAllCameras(formattedData);
+      setFilteredCameras(formattedData);
+    };
+    fetchCameras();
+  }, []);
 
   return (
     <main className="p-5 md:p-10">
@@ -55,7 +79,7 @@ export default function Home() {
         placeholder="Search cameras..."
         value={searchString}
         onChange={handleSearchChange}
-        className="mb-4 w-full rounded-md bg-white p-2 ring-1 ring-slate-500 focus:outline-none focus-visible:ring dark:bg-slate-900"
+        className="mb-4 w-full rounded-md bg-white p-2 ring-1 ring-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/80 dark:bg-slate-900"
       />
       {filteredCameras.length > 0 ? (
         filteredCameras.map((section, index) => (
@@ -68,9 +92,11 @@ export default function Home() {
               {section.images.map((camera, idx) => (
                 <Camera
                   key={idx}
-                  title={camera.title}
-                  description={camera.description}
-                  src={camera.src}
+                  title={camera.Name}
+                  description={camera.Description}
+                  src={camera.ExternalId}
+                  offline={camera.Offline}
+                  underMaintenance={camera.UnderMaintenance}
                   refreshKey={refreshKey}
                 />
               ))}
