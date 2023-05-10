@@ -1,274 +1,345 @@
 [
   {
-    "section": "SH1 Southern Motorway Cameras",
+    "section": "SH1 Southern Motorway",
     "images": [
       {
-        "title": "Spaghetti Junction (SH1/16 Port) – South",
+        "title": "Spaghetti Junction (SH1/16 Port)",
+        "description": "Central Mwy Junction. South along Sthn Mwy at Nth Wstn Mwy link",
         "src": "60.jpg"
       },
       {
-        "title": "Market Road – South",
+        "title": "Market Road",
+        "description": "South along Sthn Mwy towards Market Rd",
         "src": "225.jpg"
       },
       {
-        "title": "Greenlane – North",
+        "title": "Greenlane Interchange",
+        "description": "North along Sthn Mwy from Greenlane Interchange",
         "src": "80.jpg"
       },
       {
-        "title": "SEART – South",
+        "title": "SEART/South Eastern Highway",
+        "description": "South along Sthn Mwy towards South Eastern Hwy",
         "src": "90.jpg"
       },
       {
-        "title": "Highbrook – North",
+        "title": "Bairds Rd Overbridge",
+        "description": "North along Sthn Mwy from Bairds Rd",
         "src": "110.jpg"
       },
       {
-        "title": "Redoubt Road – North",
+        "title": "Redoubt Road",
+        "description": "North along Sthn Mwy from Redoubt Rd",
         "src": "100.jpg"
       },
       {
-        "title": "SH1 & SH20 Interchange – North",
+        "title": "SH1 & SH20 Interchange",
+        "description": "North along Sthn Mwy at Sth Wstn Mwy link",
         "src": "214.jpg"
       },
       {
-        "title": "Alfriston Road – North",
+        "title": "Alfriston Road",
+        "description": "North along Sthn Mwy towards Alfriston Rd",
         "src": "120.jpg"
       },
       {
-        "title": "Takanini – South",
+        "title": "Takanini",
+        "description": "South along Sthn Mwy towards Takanini",
         "src": "121.jpg"
       },
       {
-        "title": "Walter Strevens – South",
+        "title": "Takanini Interchange",
+        "description": "North along Sthn Mwy and Takanini On-ramp",
+        "src": "121.jpg"
+      },
+      {
+        "title": "Walter Strevens Overbridge",
+        "description": "South along Sthn Mwy from Walter Strevens Dr",
         "src": "122.jpg"
       },
       {
-        "title": "Pahurehure – South",
+        "title": "Pahurehure Inlet",
+        "description": "South along Sthn Mwy from Pahurehure Inlet",
         "src": "123.jpg"
       },
       {
-        "title": "Massey Road – North",
+        "title": "Massey Road",
+        "description": "North along Sth Wstn Mwy from Massey Rd",
         "src": "290.jpg"
       },
       {
-        "title": "Rushgreen – South",
+        "title": "Papakura",
+        "description": "South along Sthn Mwy towards Papakura",
         "src": "124.jpg"
       },
       {
-        "title": "Park Estate – South",
+        "title": "Park Estate",
+        "description": "South along Sthn Mwy from Park Estate Rd",
         "src": "125.jpg"
       },
       {
-        "title": "Slippery Creek – South",
+        "title": "Slippery Creek",
+        "description": "South along Sthn Mwy towards Drury Interchange",
         "src": "126.jpg"
       },
       {
-        "title": "Ramarama – North",
+        "title": "Ramarama",
+        "description": "North along Sthn Mwy from Ararimu Rd",
         "src": "613.jpg"
       },
       {
-        "title": "Bombay – North",
+        "title": "Bombay",
+        "description": "North along Sthn Mwy from Mill Rd",
         "src": "610.jpg"
       },
       {
-        "title": "Nikau – North",
+        "title": "Nikau",
+        "description": "South along Waikato Exwy from Nikau Rd",
         "src": "611.jpg"
       },
       {
-        "title": "SH1/SH2 Interchange – North",
+        "title": "SH1/SH2 Interchange",
+        "description": "North along Waikato Exwy from SH2 Interchange",
         "src": "612.jpg"
       }
     ]
   },
   {
-    "section": "SH1 Northern Motorway Cameras",
+    "section": "SH1 Northern Motorway",
     "images": [
       {
-        "title": "Onewa – South",
+        "title": "Onewa",
+        "description": "South along Nthn Mwy from Onewa Rd",
         "src": "50.jpg"
       },
       {
-        "title": "Esmonde – South",
+        "title": "Esmonde",
+        "description": "South along Nthn Mwy from Esmonde Rd",
         "src": "40.jpg"
       },
       {
         "title": "Northcote – North",
+        "description": "North along Nthn Mwy from Northcote Rd",
         "src": "30.jpg"
       },
       {
         "title": "Tristram – South",
+        "description": "South along Nthn Mwy from Tristram Ave",
         "src": "20.jpg"
       },
       {
         "title": "Greville – South",
+        "description": "South along Nthn Mwy from Greville Rd",
         "src": "10.jpg"
       },
       {
         "title": "Dairy Flat – South",
+        "description": "South along Nthn Mwy from Dairy Flat Service Centre",
         "src": "598.jpg"
       },
       {
-        "title": "Wainui – South",
+        "title": "Millwater",
+        "description": "South along Nthn Mwy from Wainui Rd",
         "src": "651.jpg"
-      },
-      {
-        "title": "Johnstone Hill Tunnels – South",
-        "src": "215.jpg"
       }
     ]
   },
   {
-    "section": "SH16 North Western Cameras",
+    "section": "SH16 North Western",
     "images": [
       {
         "title": "Bond Street – West",
+        "description": "West along Nth Wstn Mwy from Bond St",
         "src": "130.jpg"
       },
       {
-        "title": "Waterview Interchange – East",
+        "title": "Waterview Interchange",
+        "description": "East along Nth Wstn Mwy from Gt North Rd",
         "src": "140.jpg"
       },
       {
         "title": "The Causeway – West",
+        "description": "North along the Nth Wstn Mwy Causeway",
         "src": "655.jpg"
       },
       {
-        "title": "Te Atatu – East",
+        "title": "Te Atatu",
+        "description": "South along Nth Wstn Mwy from Te Atatu Rd",
         "src": "150.jpg"
       },
       {
-        "title": "Lincoln – East",
+        "title": "Lincoln",
+        "description": "South East along Nth Wstn Mwy from Lincoln Rd",
         "src": "160.jpg"
       },
       {
-        "title": "Lincoln – West",
+        "title": "Lincoln",
+        "description": "North West along Nth Wstn Mwy from Lincoln Rd",
         "src": "170.jpg"
       },
       {
-        "title": "Hobsonville Interchange – South",
+        "title": "SH16/SH18 Interchange South",
+        "description": "South along Nth Wstn Mwy from Hobsonville Rd",
         "src": "270.jpg"
       },
       {
-        "title": "SH16 Extension – West",
+        "title": "SH16/18 Interchange North",
+        "description": "North along Nth Wstn Mwy towards Kumeu",
         "src": "271.jpg"
       }
     ]
   },
   {
-    "section": "SH20 South Western Cameras",
+    "section": "SH20 South Western",
     "images": [
       {
-        "title": "Waterview Tunnel entrance (City end) – South",
+        "title": "Waterview Tunnel (City end)",
+        "description": "South from Nth Wstn Mwy to the Waterview Tunnel",
         "src": "669.jpg"
       },
       {
-        "title": "Waterview Tunnel entrance (South end) – South",
+        "title": "Waterview Tunnel (South end)",
+        "description": "South along Sth Wstn Mwy after Waterview Tunnel",
         "src": "667.jpg"
       },
       {
-        "title": "Richardson Road – South",
+        "title": "Te Whitinga Footbridge",
+        "description": "South along Sth Wstn Mwy towards Richardson Rd",
         "src": "668.jpg"
       },
       {
-        "title": "Maioro – South",
+        "title": "Maioro Street– South",
+        "description": "South along Sth Wstn Mwy from Maioro St",
         "src": "194.jpg"
       },
       {
-        "title": "Dominion – South",
+        "title": "May Road Overbridge",
+        "description": "North along Sth Wstn Mwy from May Rd",
+        "src": "653.jpg"
+      },
+      {
+        "title": "Dominion Road – South",
+        "description": "South along Sth Wstn Mwy from Dominion Rd",
         "src": "193.jpg"
       },
       {
-        "title": "Melrose – South",
+        "title": "Hayr Road Overbridge",
+        "description": "South along Sth Wstn Mwy towards Hayr Rd Overbridge",
+        "src": "192.jpg"
+      },
+      {
+        "title": "Hayr Road Overbridge",
+        "description": "South along Sth Wstn Mwy towards Hayr Rd Overbridge",
         "src": "192.jpg"
       },
       {
         "title": "Hillsborough – South",
+        "description": "South along Sth Wstn Mwy from Hillsborough Rd",
         "src": "191.jpg"
       },
       {
         "title": "Queenstown Road – North east",
+        "description": "East along Queenstown Rd from Sth Wstn Mwy",
         "src": "190.jpg"
       },
       {
         "title": "Onehunga Wharf – North",
+        "description": "",
         "src": "202.jpg"
       },
       {
         "title": "Rimu Road – North",
+        "description": "",
         "src": "203.jpg"
       }
     ]
   },
   {
-    "section": "SH20a Airport Motorway Cameras",
+    "section": "SH20a Airport Motorway",
     "images": [
       {
         "title": "Bader Drive – East",
+        "description": "",
         "src": "307.jpg"
       },
       {
         "title": "Kirkbride – North",
+        "description": "",
         "src": "275.jpg"
       },
       {
         "title": "Montgomerie – North",
+        "description": "",
         "src": "274.jpg"
       },
       {
         "title": "Puhinui – South",
+        "description": "",
         "src": "272.jpg"
       },
       {
         "title": "Selfs Road – North",
+        "description": "",
         "src": "288.jpg"
       },
       {
         "title": "Plunket Ave – East",
+        "description": "",
         "src": "208.jpg"
       },
       {
         "title": "Lambie Drive – East",
+        "description": "",
         "src": "209.jpg"
       },
       {
         "title": "SH20 to SH1 on–ramp – South",
+        "description": "",
         "src": "177.jpg"
       }
     ]
   },
   {
-    "section": "SH18 Upper Harbour Motorway Cameras",
+    "section": "SH18 Upper Harbour Motorway",
     "images": [
       {
         "title": "Paul Matthews – East",
+        "description": "",
         "src": "174.jpg"
       },
       {
         "title": "Albany Highway – East",
+        "description": "",
         "src": "172.jpg"
       },
       {
         "title": "Greenhithe Road – East",
+        "description": "",
         "src": "175.jpg"
       },
       {
         "title": "Tauhinu Interchange – East",
+        "description": "",
         "src": "171.jpg"
       },
       {
         "title": "Greenhithe Bridge – East",
+        "description": "",
         "src": "212.jpg"
       },
       {
         "title": "Sinton – West",
+        "description": "",
         "src": "224.jpg"
       },
       {
         "title": "Brigham Creek – East",
+        "description": "",
         "src": "223.jpg"
       },
       {
         "title": "Trig Road – West",
+        "description": "",
         "src": "221.jpg"
       }
     ]
