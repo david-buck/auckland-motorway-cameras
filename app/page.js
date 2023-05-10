@@ -28,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setRefreshKey((prevKey) => prevKey + 1);
-    }, 3 * 1000);
+    }, 20 * 1000);
 
     return () => clearInterval(intervalId);
   }, []);
