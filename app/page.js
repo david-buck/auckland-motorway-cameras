@@ -16,7 +16,7 @@ const Camera = ({
       src={`https://www.trafficnz.info/camera/${src}.jpg?refreshKey=${refreshKey}`}
       alt={description}
       loading="lazy"
-      className="aspect-video w-full rounded object-cover before:content-none "
+      className="aspect-video w-full rounded bg-gray-500/20 object-cover"
     />
   </div>
 );
@@ -28,7 +28,7 @@ export default function Home() {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setRefreshKey((prevKey) => prevKey + 1);
-    }, 30 * 1000);
+    }, 3 * 1000);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -74,13 +74,15 @@ export default function Home() {
   return (
     <main className="p-5 md:p-10">
       <h1 className="mb-4 text-2xl font-bold">Auckland traffic cameras</h1>
-      <input
-        type="text"
-        placeholder="Search cameras..."
-        value={searchString}
-        onChange={handleSearchChange}
-        className="mb-4 w-full rounded-md bg-white p-2 ring-1 ring-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/80 dark:bg-slate-900"
-      />
+      {allCameras.length > 0 && (
+        <input
+          type="text"
+          placeholder="Search cameras..."
+          value={searchString}
+          onChange={handleSearchChange}
+          className="mb-4 w-full rounded-md bg-white p-2 ring-1 ring-slate-500 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/80 dark:bg-slate-900"
+        />
+      )}
       {filteredCameras.length > 0 ? (
         filteredCameras.map((section, index) => (
           <div key={index}>
@@ -104,7 +106,9 @@ export default function Home() {
           </div>
         ))
       ) : (
-        <>No matches</>
+        <div className="py-2 text-lg opacity-60">
+          {allCameras.length > 0 ? "No matches" : "Loading"}
+        </div>
       )}
     </main>
   );
